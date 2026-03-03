@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Champions Club — February 2026</title>
+    <meta
+      name="description"
+      content="Champions Club for February 2026 — celebrating the All Access athletes who crushed it."
+    />
+    <style>
+      :root {
+        --bg-dark: #0a0a0a;
+        --bg-card: #1a1a1a;
+        --bg-card-hover: #222222;
+        --orange: #ff5722;
+        --orange-bright: #ff6b3d;
+        --orange-dark: #e64a19;
+        --text: #ffffff;
+        --text-muted: #a0a0a0;
+        --text-dim: #666666;
+        --border: rgba(255, 255, 255, 0.1);
+        --border-bright: rgba(255, 87, 34, 0.3);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
+        color: var(--text);
+        background: var(--bg-dark);
+        background-image:
+          radial-gradient(circle at 20% 20%, rgba(255, 87, 34, 0.08) 0%, transparent 50%),
+          radial-gradient(circle at 80% 80%, rgba(255, 87, 34, 0.06) 0%, transparent 50%);
+        line-height: 1.6;
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+
+      .hero {
+        position: relative;
+        padding: 48px 40px;
+        border: 1px solid var(--border-bright);
+        border-radius: 24px;
+        background: linear-gradient(135deg, rgba(255, 87, 34, 0.1) 0%, rgba(26, 26, 26, 0.8) 100%);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+        margin-bottom: 48px;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(255, 87, 34, 0.15) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .hero > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .kicker {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 999px;
+        background: var(--orange);
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .trophy-icon {
+        width: 16px;
+        height: 16px;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(32px, 5vw, 56px);
+        line-height: 1.1;
+        letter-spacing: -1px;
+        font-weight: 900;
+        background: linear-gradient(135deg, #fff 0%, var(--orange-bright) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .sub {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 600px;
+      }
+
+      .meta {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.05);
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .pill b {
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 24px;
+      }
+
+      .award {
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--bg-card);
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .award:hover {
+        border-color: var(--border-bright);
+        background: var(--bg-card-hover);
+        transform: translateY(-4px);
+      }
+
+      .awardHeader {
+        padding: 24px 24px 16px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .awardTitle {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.3;
+        letter-spacing: -0.3px;
+        font-weight: 800;
+        color: var(--text);
+      }
+
+      .awardDesc {
+        margin: 0;
+        font-size: 14px;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 12px;
+      }
+
+      .badge.gold {
+        background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+        color: #fff;
+      }
+      .badge.sky {
+        background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+        color: #fff;
+      }
+      .badge.violet {
+        background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+        color: #fff;
+      }
+
+      .winner {
+        padding: 24px;
+      }
+
+      .winnerCard {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .avatar {
+        flex: none;
+        width: 80px;
+        height: 80px;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 2px solid var(--orange);
+        position: relative;
+        background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+        box-shadow: 0 8px 24px rgba(255, 87, 34, 0.3);
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .avatar .initials {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .winnerInfo {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .name {
+        margin: 0 0 8px;
+        font-weight: 900;
+        font-size: 22px;
+        letter-spacing: -0.3px;
+        color: var(--text);
+      }
+
+      .primaryStat {
+        display: inline-block;
+        padding: 8px 14px;
+        background: rgba(255, 87, 34, 0.15);
+        border: 1px solid var(--border-bright);
+        border-radius: 8px;
+        color: var(--orange-bright);
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.05);
+        font-size: 13px;
+        color: var(--text-muted);
+        white-space: nowrap;
+      }
+
+      .sportTags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .sportChip {
+        padding: 5px 10px;
+        border-radius: 6px;
+        background: rgba(255, 87, 34, 0.1);
+        border: 1px solid rgba(255, 87, 34, 0.3);
+        font-size: 12px;
+        color: var(--orange-bright);
+        font-weight: 600;
+      }
+
+      footer {
+        margin-top: 60px;
+        padding-top: 40px;
+        border-top: 1px solid var(--border);
+        color: var(--text-muted);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .fineprint {
+        padding: 20px 24px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .fineprint b {
+        color: var(--text);
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          padding: 32px 24px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .winnerCard {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .avatar {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="kicker">
+          <svg class="trophy-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 7h-2V5c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v3c0 2.21 1.79 4 4 4h.68c.38 1.66 1.6 3 3.16 3.52V21H8c-.55 0-1 .45-1 1s.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1h-1.84v-1.48c1.56-.52 2.78-1.86 3.16-3.52H18c2.21 0 4-1.79 4-4V9c0-1.1-.9-2-2-2zM6 14c-1.1 0-2-.9-2-2V9h2v5zm10-4.5c0 2.21-1.79 4-4 4s-4-1.79-4-4v-5h8v5zm4 2.5c0 1.1-.9 2-2 2V9h2v3z"/>
+          </svg>
+          Champions Club
+        </div>
+        <h1>February 2026 Champions</h1>
+        <p class="sub">
+          Celebrating the All Access athletes who showed up, pushed limits, and crushed their goals this month.
+        </p>
+        <div class="meta">
+          <div class="pill"><b>Period</b> February 2026</div>
+          <div class="pill"><b>Members</b> Active All Access</div>
+          <div class="pill"><b>Metric</b> Verified Check-ins</div>
+        </div>
+      </section>
+
+      <section class="grid" id="awards"></section>
+
+      <footer>
+        <div class="fineprint">
+          <div><b>Methodology</b></div>
+          <div style="margin-top: 8px;">
+            Data sourced from verified check-ins for All Access members active during February 2026 (guest pass plans excluded).
+          </div>
+          <div style="margin-top: 12px;">
+            <b>What counts as an activity?</b> Each unique combination of sport + activity type counts as one activity.
+            Examples: "Swimming Coaching" is one activity, "Swimming Games" is another. "Badminton Coaching" and "Squash Coaching"
+            are two separate activities. This applies to all types: coaching sessions, competitions, games, lap swimming, gym workouts, and more.
+          </div>
+          <div style="margin-top: 12px;">
+            <b>Key metrics:</b> <i>Sports</i> = unique sports tried. <i>Activity Types</i> = distinct activity formats (coaching, games, etc.) across all sports. <i>Check-ins</i> = total verified sessions attended.
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Data snapshot generated from MongoDB (morpheus) for Feb 2026.
+      const DATA = {
+        monthLabel: "February 2026",
+        topCheckins: [
+          {
+            userId: "6960c768f20b5cbdddb9927c",
+            name: "Madhu Kumari",
+            profilePicture:
+              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/6960c768f20b5cbdddb9927c/6960c768f20b5cbdddb9927c.webp",
+            checkedInCount: 51,
+            sportsCount: 1,
+            activitiesCount: 1,
+            activityTypeCount: 1,
+            facilitiesCount: 1,
+            sportNames: ["Swimming"],
+            topSport: "Swimming",
+            topSportCheckIns: 51
+          }
+        ],
+        topSports: [
+          {
+            userId: "697b9593fa72f98cf9ee4c28",
+            name: "Akhil S",
+            profilePicture:
+              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
+            checkedInCount: 42,
+            sportsCount: 6,
+            activitiesCount: 6,
+            activityTypeCount: 1,
+            facilitiesCount: 6,
+            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
+            topSport: "Swimming",
+            topSportCheckIns: 26
+          }
+        ],
+        topActivities: [
+          {
+            userId: "697b9593fa72f98cf9ee4c28",
+            name: "Akhil S",
+            profilePicture:
+              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
+            checkedInCount: 42,
+            sportsCount: 6,
+            activitiesCount: 6,
+            activityTypeCount: 1,
+            facilitiesCount: 6,
+            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
+            topSport: "Swimming",
+            topSportCheckIns: 26
+          }
+        ],
+        mostAdventurous: [
+          {
+            userId: "697b9593fa72f98cf9ee4c28",
+            name: "Akhil S",
+            profilePicture:
+              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
+            checkedInCount: 42,
+            sportsCount: 6,
+            activitiesCount: 6,
+            activityTypeCount: 1,
+            facilitiesCount: 6,
+            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
+            topSport: "Swimming",
+            topSportCheckIns: 26
+          }
+        ],
+        sportSpecialist: [
+          {
+            userId: "6960c768f20b5cbdddb9927c",
+            name: "Madhu Kumari",
+            profilePicture:
+              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/6960c768f20b5cbdddb9927c/6960c768f20b5cbdddb9927c.webp",
+            checkedInCount: 51,
+            sportsCount: 1,
+            activitiesCount: 1,
+            activityTypeCount: 1,
+            facilitiesCount: 1,
+            sportNames: ["Swimming"],
+            topSport: "Swimming",
+            topSportCheckIns: 51
+          }
+        ],
+        facilityExplorer: [
+          {
+            userId: "697b9593fa72f98cf9ee4c28",
+            name: "Akhil S",
+            profilePicture:
+              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
+            checkedInCount: 42,
+            sportsCount: 6,
+            activitiesCount: 6,
+            activityTypeCount: 1,
+            facilitiesCount: 6,
+            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
+            topSport: "Swimming",
+            topSportCheckIns: 26
+          }
+        ]
+      };
+
+      // Fallback athlete images for users without profile pictures
+      const athleteImages = [
+        'https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1540331547168-8b63109225b7?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1551958219-acbc608c6377?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=400&fit=crop'
+      ];
+
+      const awardCards = [
+        {
+          key: "topCheckins",
+          title: "Consistency King/Queen",
+          desc: "Most check-ins this month. The ultimate dedication award for showing up and putting in the work.",
+          badge: { text: "Consistent", className: "gold" },
+          primaryStat: (p) => `${p.checkedInCount} check-ins`,
+        },
+        {
+          key: "topSports",
+          title: "Multi-Sport Warrior",
+          desc: "Explored the most different sports. A true all-around athlete who doesn't stick to just one game.",
+          badge: { text: "Explorer", className: "sky" },
+          primaryStat: (p) => `${p.sportsCount} sports`,
+        },
+        {
+          key: "topActivities",
+          title: "Ultimate Variety Seeker",
+          desc: "Tried the most unique sport + activity combinations. Maximum diversity in training.",
+          badge: { text: "Variety", className: "violet" },
+          primaryStat: (p) => `${p.activitiesCount} unique combos`,
+        },
+        {
+          key: "mostAdventurous",
+          title: "The Adventurer",
+          desc: "Fearless explorer with the most diverse range of activities across different sports.",
+          badge: { text: "Adventurer", className: "violet" },
+          primaryStat: (p) => `${p.activitiesCount} experiences`,
+        },
+        {
+          key: "sportSpecialist",
+          title: "Sport Specialist",
+          desc: "Most dedicated to a single sport. Laser-focused on mastering their craft.",
+          badge: { text: "Specialist", className: "gold" },
+          primaryStat: (p) => `${p.topSportCheckIns} ${p.topSport} sessions`,
+        },
+        {
+          key: "facilityExplorer",
+          title: "Facility Hopper",
+          desc: "Visited the most different Game Theory facilities. The ultimate explorer across our locations.",
+          badge: { text: "Explorer", className: "sky" },
+          primaryStat: (p) => `${p.facilitiesCount} facilities`,
+        },
+      ];
+
+      const awardsEl = document.getElementById("awards");
+
+      function initials(name) {
+        const parts = String(name || "")
+          .trim()
+          .split(/\s+/)
+          .filter(Boolean);
+        if (!parts.length) return "AA";
+        const first = parts[0][0] || "";
+        const last = parts.length > 1 ? parts[parts.length - 1][0] || "" : "";
+        return (first + last).toUpperCase();
+      }
+
+      function getAthleteImage(index) {
+        return athleteImages[index % athleteImages.length];
+      }
+
+      function renderWinner(person, cfg, index) {
+        const safeName = person.name && person.name.trim() ? person.name.trim() : "All Access Champion";
+
+        const avatar = document.createElement("div");
+        avatar.className = "avatar";
+
+        const initialsEl = document.createElement("div");
+        initialsEl.className = "initials";
+        initialsEl.textContent = initials(safeName);
+        avatar.appendChild(initialsEl);
+
+        // Use profile picture if available, otherwise use fun athlete stock image
+        const imageUrl = person.profilePicture || getAthleteImage(index);
+
+        const img = document.createElement("img");
+        img.alt = safeName;
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.referrerPolicy = "no-referrer";
+        img.src = imageUrl;
+        img.addEventListener("load", () => {
+          initialsEl.style.display = "none";
+        });
+        img.addEventListener("error", () => {
+          img.remove();
+          initialsEl.style.display = "grid";
+        });
+        avatar.prepend(img);
+
+        const winnerInfo = document.createElement("div");
+        winnerInfo.className = "winnerInfo";
+
+        const nameEl = document.createElement("h3");
+        nameEl.className = "name";
+        nameEl.textContent = safeName;
+
+        const primaryStatEl = document.createElement("div");
+        primaryStatEl.className = "primaryStat";
+        primaryStatEl.textContent = cfg.primaryStat(person);
+
+        const stats = document.createElement("div");
+        stats.className = "stats";
+
+        const chip1 = document.createElement("span");
+        chip1.className = "chip";
+        chip1.textContent = `${person.checkedInCount} total check-ins`;
+
+        const chip2 = document.createElement("span");
+        chip2.className = "chip";
+        chip2.textContent = `${person.sportsCount} ${person.sportsCount === 1 ? 'sport' : 'sports'}`;
+
+        stats.append(chip1, chip2);
+
+        const sportTags = document.createElement("div");
+        sportTags.className = "sportTags";
+        const sports = Array.isArray(person.sportNames) ? person.sportNames : [];
+        sports.slice(0, 8).forEach((s) => {
+          const sp = document.createElement("span");
+          sp.className = "sportChip";
+          sp.textContent = s;
+          sportTags.appendChild(sp);
+        });
+        if (sports.length > 8) {
+          const more = document.createElement("span");
+          more.className = "sportChip";
+          more.textContent = `+${sports.length - 8} more`;
+          sportTags.appendChild(more);
+        }
+
+        winnerInfo.append(nameEl, primaryStatEl, stats, sportTags);
+
+        const card = document.createElement("div");
+        card.className = "winnerCard";
+        card.append(avatar, winnerInfo);
+
+        return card;
+      }
+
+      function renderAwardCard(cfg, index) {
+        const award = document.createElement("article");
+        award.className = "award";
+
+        const header = document.createElement("div");
+        header.className = "awardHeader";
+
+        const title = document.createElement("h2");
+        title.className = "awardTitle";
+        title.textContent = cfg.title;
+
+        const desc = document.createElement("p");
+        desc.className = "awardDesc";
+        desc.textContent = cfg.desc;
+
+        const badge = document.createElement("div");
+        badge.className = `badge ${cfg.badge.className}`;
+        badge.textContent = cfg.badge.text;
+
+        header.append(title, desc, badge);
+
+        const winnerSection = document.createElement("div");
+        winnerSection.className = "winner";
+
+        const list = DATA[cfg.key] || [];
+        list.forEach((p) => winnerSection.appendChild(renderWinner(p, cfg, index)));
+
+        award.append(header, winnerSection);
+        return award;
+      }
+
+      awardCards.forEach((cfg, index) => awardsEl.appendChild(renderAwardCard(cfg, index)));
+    </script>
+  </body>
+</html>
