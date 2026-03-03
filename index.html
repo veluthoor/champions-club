@@ -154,6 +154,47 @@
         gap: 24px;
       }
 
+      .sectionHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 16px;
+        margin: 0 0 20px;
+      }
+
+      .sectionTitle {
+        margin: 0;
+        font-size: clamp(26px, 4vw, 36px);
+        letter-spacing: -0.6px;
+      }
+
+      .sectionDesc {
+        margin: 8px 0 0;
+        color: var(--text-muted);
+        max-width: 720px;
+      }
+
+      .sectionSpacer {
+        margin-top: 56px;
+      }
+
+      .sheetLink {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        border: 1px solid var(--border-bright);
+        color: var(--text);
+        text-decoration: none;
+        background: rgba(255, 87, 34, 0.08);
+        white-space: nowrap;
+      }
+
+      .sheetLink:hover {
+        background: rgba(255, 87, 34, 0.14);
+      }
+
       .award {
         border: 1px solid var(--border);
         border-radius: 20px;
@@ -314,6 +355,16 @@
         font-weight: 600;
       }
 
+      .centreGroup {
+        margin-top: 28px;
+      }
+
+      .centreTitle {
+        margin: 0 0 16px;
+        font-size: 24px;
+        letter-spacing: -0.4px;
+      }
+
       footer {
         margin-top: 60px;
         padding-top: 40px;
@@ -337,6 +388,11 @@
       @media (max-width: 768px) {
         .hero {
           padding: 32px 24px;
+        }
+
+        .sectionHead {
+          flex-direction: column;
+          align-items: flex-start;
         }
 
         .grid {
@@ -374,10 +430,33 @@
           <div class="pill"><b>Period</b> February 2026</div>
           <div class="pill"><b>Members</b> Active All Access</div>
           <div class="pill"><b>Metric</b> Verified Check-ins</div>
+          <a class="sheetLink" id="sheetLink" href="./february-2026-centre-awards.csv">Centre awards sheet</a>
         </div>
       </section>
 
-      <section class="grid" id="awards"></section>
+      <section>
+        <div class="sectionHead">
+          <div>
+            <h2 class="sectionTitle">Overall February Leaders</h2>
+            <p class="sectionDesc">
+              Network-wide winners across all Game Theory centres for active All Access members in February 2026.
+            </p>
+          </div>
+        </div>
+        <div class="grid" id="awards"></div>
+      </section>
+
+      <section class="sectionSpacer">
+        <div class="sectionHead">
+          <div>
+            <h2 class="sectionTitle">Centre-Level Trends</h2>
+            <p class="sectionDesc">
+              At each centre: highest check-ins, most sports played at that centre, and the broadest activity variety.
+            </p>
+          </div>
+        </div>
+        <div id="centre-awards"></div>
+      </section>
 
       <footer>
         <div class="fineprint">
@@ -393,110 +472,20 @@
           <div style="margin-top: 12px;">
             <b>Key metrics:</b> <i>Sports</i> = unique sports tried. <i>Activity Types</i> = distinct activity formats (coaching, games, etc.) across all sports. <i>Check-ins</i> = total verified sessions attended.
           </div>
+          <div style="margin-top: 12px;">
+            <b>Centre activity award rule:</b> the activity variety score uses a member's total February activity combinations, but they only qualify for a centre if at least 2 of those combinations happened at that centre.
+          </div>
         </div>
       </footer>
     </main>
 
+    <script src="./data.js"></script>
     <script>
-      // Data snapshot generated from MongoDB (morpheus) for Feb 2026.
-      const DATA = {
+      const DATA = window.CHAMPIONS_DATA || {
         monthLabel: "February 2026",
-        topCheckins: [
-          {
-            userId: "6960c768f20b5cbdddb9927c",
-            name: "Madhu Kumari",
-            profilePicture:
-              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/6960c768f20b5cbdddb9927c/6960c768f20b5cbdddb9927c.webp",
-            checkedInCount: 51,
-            sportsCount: 1,
-            activitiesCount: 1,
-            activityTypeCount: 1,
-            facilitiesCount: 1,
-            sportNames: ["Swimming"],
-            topSport: "Swimming",
-            topSportCheckIns: 51
-          }
-        ],
-        topSports: [
-          {
-            userId: "697b9593fa72f98cf9ee4c28",
-            name: "Akhil S",
-            profilePicture:
-              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
-            checkedInCount: 42,
-            sportsCount: 6,
-            activitiesCount: 6,
-            activityTypeCount: 1,
-            facilitiesCount: 6,
-            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
-            topSport: "Swimming",
-            topSportCheckIns: 26
-          }
-        ],
-        topActivities: [
-          {
-            userId: "697b9593fa72f98cf9ee4c28",
-            name: "Akhil S",
-            profilePicture:
-              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
-            checkedInCount: 42,
-            sportsCount: 6,
-            activitiesCount: 6,
-            activityTypeCount: 1,
-            facilitiesCount: 6,
-            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
-            topSport: "Swimming",
-            topSportCheckIns: 26
-          }
-        ],
-        mostAdventurous: [
-          {
-            userId: "697b9593fa72f98cf9ee4c28",
-            name: "Akhil S",
-            profilePicture:
-              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
-            checkedInCount: 42,
-            sportsCount: 6,
-            activitiesCount: 6,
-            activityTypeCount: 1,
-            facilitiesCount: 6,
-            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
-            topSport: "Swimming",
-            topSportCheckIns: 26
-          }
-        ],
-        sportSpecialist: [
-          {
-            userId: "6960c768f20b5cbdddb9927c",
-            name: "Madhu Kumari",
-            profilePicture:
-              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/6960c768f20b5cbdddb9927c/6960c768f20b5cbdddb9927c.webp",
-            checkedInCount: 51,
-            sportsCount: 1,
-            activitiesCount: 1,
-            activityTypeCount: 1,
-            facilitiesCount: 1,
-            sportNames: ["Swimming"],
-            topSport: "Swimming",
-            topSportCheckIns: 51
-          }
-        ],
-        facilityExplorer: [
-          {
-            userId: "697b9593fa72f98cf9ee4c28",
-            name: "Akhil S",
-            profilePicture:
-              "https://d3ql9aupxror0b.cloudfront.net/profile_pictures/697b9593fa72f98cf9ee4c28/697b9593fa72f98cf9ee4c28.webp",
-            checkedInCount: 42,
-            sportsCount: 6,
-            activitiesCount: 6,
-            activityTypeCount: 1,
-            facilitiesCount: 6,
-            sportNames: ["Badminton", "Basketball", "Pickleball", "Squash", "Swimming", "Table Tennis"],
-            topSport: "Swimming",
-            topSportCheckIns: 26
-          }
-        ]
+        sheetPath: "february-2026-centre-awards.csv",
+        overallAwards: {},
+        centreAwards: []
       };
 
       // Fallback athlete images for users without profile pictures
@@ -554,7 +543,48 @@
         },
       ];
 
+      const centreAwardCards = [
+        {
+          key: "topCheckins",
+          title: "Most Check-ins",
+          desc: "Highest verified check-in count at this centre during February.",
+          badge: { text: "Consistent", className: "gold" },
+          primaryStat: (p) => `${p.checkedInCount} centre check-ins`,
+          stats: (p) => [
+            `${p.sportsCount} ${p.sportsCount === 1 ? "sport" : "sports"} at this centre`,
+            `${p.overallCheckedInCount} total February check-ins`
+          ]
+        },
+        {
+          key: "topSports",
+          title: "Most Sports At Centre",
+          desc: "Played the widest range of sports at this centre in February.",
+          badge: { text: "Explorer", className: "sky" },
+          primaryStat: (p) => `${p.sportsCount} sports at this centre`,
+          stats: (p) => [
+            `${p.checkedInCount} centre check-ins`,
+            `${p.overallSportsCount} sports overall`
+          ]
+        },
+        {
+          key: "topActivities",
+          title: "Most Different Activities",
+          desc: "Largest activity mix overall, qualified by doing at least 2 activity combos at this centre.",
+          badge: { text: "Variety", className: "violet" },
+          primaryStat: (p) => `${p.overallActivitiesCount} total activity combos`,
+          stats: (p) => [
+            `${p.activitiesAtCentreCount} combos at this centre`,
+            `${p.overallCheckedInCount} total February check-ins`
+          ]
+        }
+      ];
+
       const awardsEl = document.getElementById("awards");
+      const centreAwardsEl = document.getElementById("centre-awards");
+      const sheetLinkEl = document.getElementById("sheetLink");
+      if (sheetLinkEl && DATA.sheetPath) {
+        sheetLinkEl.href = `./${DATA.sheetPath}`;
+      }
 
       function initials(name) {
         const parts = String(name || "")
@@ -614,15 +644,19 @@
         const stats = document.createElement("div");
         stats.className = "stats";
 
-        const chip1 = document.createElement("span");
-        chip1.className = "chip";
-        chip1.textContent = `${person.checkedInCount} total check-ins`;
+        const chipValues = typeof cfg.stats === "function"
+          ? cfg.stats(person)
+          : [
+              `${person.checkedInCount} total check-ins`,
+              `${person.sportsCount} ${person.sportsCount === 1 ? "sport" : "sports"}`
+            ];
 
-        const chip2 = document.createElement("span");
-        chip2.className = "chip";
-        chip2.textContent = `${person.sportsCount} ${person.sportsCount === 1 ? 'sport' : 'sports'}`;
-
-        stats.append(chip1, chip2);
+        chipValues.filter(Boolean).forEach((value) => {
+          const chip = document.createElement("span");
+          chip.className = "chip";
+          chip.textContent = value;
+          stats.appendChild(chip);
+        });
 
         const sportTags = document.createElement("div");
         sportTags.className = "sportTags";
@@ -649,7 +683,7 @@
         return card;
       }
 
-      function renderAwardCard(cfg, index) {
+      function renderAwardCard(cfg, index, source) {
         const award = document.createElement("article");
         award.className = "award";
 
@@ -673,14 +707,36 @@
         const winnerSection = document.createElement("div");
         winnerSection.className = "winner";
 
-        const list = DATA[cfg.key] || [];
+        const list = source[cfg.key] || [];
         list.forEach((p) => winnerSection.appendChild(renderWinner(p, cfg, index)));
 
         award.append(header, winnerSection);
         return award;
       }
 
-      awardCards.forEach((cfg, index) => awardsEl.appendChild(renderAwardCard(cfg, index)));
+      awardCards.forEach((cfg, index) => {
+        awardsEl.appendChild(renderAwardCard(cfg, index, DATA.overallAwards || {}));
+      });
+
+      (DATA.centreAwards || []).forEach((centre) => {
+        const group = document.createElement("section");
+        group.className = "centreGroup";
+
+        const title = document.createElement("h3");
+        title.className = "centreTitle";
+        title.textContent = centre.centreName;
+
+        const grid = document.createElement("div");
+        grid.className = "grid";
+        centreAwardCards.forEach((cfg, index) => {
+          if ((centre[cfg.key] || []).length) {
+            grid.appendChild(renderAwardCard(cfg, index, centre));
+          }
+        });
+
+        group.append(title, grid);
+        centreAwardsEl.appendChild(group);
+      });
     </script>
   </body>
 </html>
