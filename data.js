@@ -1709,5 +1709,5 @@ window.CHAMPIONS_DATA = {
       "topActivities": []
     }
   ],
-  "generatedAt": "2026-03-03T09:13:41.414Z"
+  "generatedAt": "2026-03-03T09:21:00.891Z"
 };

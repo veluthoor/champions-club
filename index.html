@@ -714,6 +714,26 @@
         return award;
       }
 
+      function shouldRenderCentreAward(centre, cfg) {
+        const winners = centre[cfg.key] || [];
+        if (!winners.length) return false;
+
+        if (cfg.key === "topSports") {
+          const winner = winners[0];
+          const topCheckinsWinner = (centre.topCheckins || [])[0];
+          if (
+            winner &&
+            winner.sportsCount <= 1 &&
+            topCheckinsWinner &&
+            topCheckinsWinner.userId === winner.userId
+          ) {
+            return false;
+          }
+        }
+
+        return true;
+      }
+
       awardCards.forEach((cfg, index) => {
         awardsEl.appendChild(renderAwardCard(cfg, index, DATA.overallAwards || {}));
       });
@@ -729,7 +749,7 @@
         const grid = document.createElement("div");
         grid.className = "grid";
         centreAwardCards.forEach((cfg, index) => {
-          if ((centre[cfg.key] || []).length) {
+          if (shouldRenderCentreAward(centre, cfg)) {
             grid.appendChild(renderAwardCard(cfg, index, centre));
           }
         });
