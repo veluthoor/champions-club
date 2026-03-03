@@ -13,6 +13,9 @@ window.CHAMPIONS_DATA = {
           "Swimming"
         ],
         "activitiesCount": 1,
+        "activityNames": [
+          "Swimming - Coaching"
+        ],
         "activityTypeCount": 1,
         "facilitiesCount": 1,
         "topSport": "Swimming",
@@ -35,6 +38,14 @@ window.CHAMPIONS_DATA = {
           "Table Tennis"
         ],
         "activitiesCount": 6,
+        "activityNames": [
+          "Badminton - Coaching",
+          "Basketball - Coaching",
+          "Pickleball - Coaching",
+          "Squash - Coaching",
+          "Swimming - Coaching",
+          "Table Tennis - Coaching"
+        ],
         "activityTypeCount": 1,
         "facilitiesCount": 6,
         "topSport": "Swimming",
@@ -57,6 +68,14 @@ window.CHAMPIONS_DATA = {
           "Table Tennis"
         ],
         "activitiesCount": 6,
+        "activityNames": [
+          "Badminton - Coaching",
+          "Basketball - Coaching",
+          "Pickleball - Coaching",
+          "Squash - Coaching",
+          "Swimming - Coaching",
+          "Table Tennis - Coaching"
+        ],
         "activityTypeCount": 1,
         "facilitiesCount": 6,
         "topSport": "Swimming",
@@ -79,6 +98,14 @@ window.CHAMPIONS_DATA = {
           "Table Tennis"
         ],
         "activitiesCount": 6,
+        "activityNames": [
+          "Badminton - Coaching",
+          "Basketball - Coaching",
+          "Pickleball - Coaching",
+          "Squash - Coaching",
+          "Swimming - Coaching",
+          "Table Tennis - Coaching"
+        ],
         "activityTypeCount": 1,
         "facilitiesCount": 6,
         "topSport": "Swimming",
@@ -96,6 +123,9 @@ window.CHAMPIONS_DATA = {
           "Swimming"
         ],
         "activitiesCount": 1,
+        "activityNames": [
+          "Swimming - Coaching"
+        ],
         "activityTypeCount": 1,
         "facilitiesCount": 1,
         "topSport": "Swimming",
@@ -118,6 +148,14 @@ window.CHAMPIONS_DATA = {
           "Table Tennis"
         ],
         "activitiesCount": 6,
+        "activityNames": [
+          "Badminton - Coaching",
+          "Basketball - Coaching",
+          "Pickleball - Coaching",
+          "Squash - Coaching",
+          "Swimming - Coaching",
+          "Table Tennis - Coaching"
+        ],
         "activityTypeCount": 1,
         "facilitiesCount": 6,
         "topSport": "Swimming",
@@ -142,7 +180,13 @@ window.CHAMPIONS_DATA = {
             "Badminton"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Badminton - Coaching"
+          ],
           "overallCheckedInCount": 33,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -165,7 +209,13 @@ window.CHAMPIONS_DATA = {
             "Badminton"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Badminton - Coaching"
+          ],
           "overallCheckedInCount": 33,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -194,7 +244,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 33,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -219,7 +277,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 33,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -244,7 +310,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 33,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -272,7 +346,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 27,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -295,7 +375,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 27,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -323,7 +409,14 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Pickleball - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 24,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -347,7 +440,14 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Pickleball - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 24,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -376,7 +476,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 51,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -399,7 +505,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 51,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -428,7 +540,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 14,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -453,7 +573,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 14,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -478,7 +606,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 14,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -507,7 +643,16 @@ window.CHAMPIONS_DATA = {
             "Basketball"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 40,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -533,7 +678,16 @@ window.CHAMPIONS_DATA = {
             "Basketball"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 40,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -559,7 +713,19 @@ window.CHAMPIONS_DATA = {
             "Basketball"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching"
+          ],
           "overallActivitiesCount": 6,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching",
+            "Pickleball - Coaching",
+            "Squash - Coaching",
+            "Swimming - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallCheckedInCount": 42,
           "overallSportsCount": 6,
           "overallSportNames": [
@@ -591,7 +757,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 19,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -614,7 +786,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 19,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -643,7 +821,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 21,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -668,7 +854,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 21,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -693,7 +887,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 21,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -722,7 +924,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 32,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -747,7 +957,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 32,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -772,7 +990,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 32,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -800,7 +1026,14 @@ window.CHAMPIONS_DATA = {
             "Squash"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Squash - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Squash - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 22,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -824,7 +1057,14 @@ window.CHAMPIONS_DATA = {
             "Squash"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Squash - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Squash - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 22,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -853,7 +1093,13 @@ window.CHAMPIONS_DATA = {
             "Pickleball"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Pickleball - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Pickleball - Coaching"
+          ],
           "overallCheckedInCount": 8,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -877,7 +1123,17 @@ window.CHAMPIONS_DATA = {
             "Table Tennis"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Pickleball - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallActivitiesCount": 4,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Pickleball - Coaching",
+            "Squash - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallCheckedInCount": 18,
           "overallSportsCount": 4,
           "overallSportNames": [
@@ -904,7 +1160,19 @@ window.CHAMPIONS_DATA = {
             "Table Tennis"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Pickleball - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallActivitiesCount": 6,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching",
+            "Pickleball - Coaching",
+            "Squash - Coaching",
+            "Swimming - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallCheckedInCount": 42,
           "overallSportsCount": 6,
           "overallSportNames": [
@@ -936,7 +1204,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 39,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -959,7 +1233,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 39,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -987,7 +1267,15 @@ window.CHAMPIONS_DATA = {
             "Pickleball"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Pickleball - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Pickleball - Coaching",
+            "Squash - Coaching"
+          ],
           "overallCheckedInCount": 33,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -1013,7 +1301,16 @@ window.CHAMPIONS_DATA = {
             "Pickleball"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Basketball - Coaching",
+            "Pickleball - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching",
+            "Pickleball - Coaching"
+          ],
           "overallCheckedInCount": 12,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -1039,7 +1336,17 @@ window.CHAMPIONS_DATA = {
             "Pickleball"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Basketball - Coaching",
+            "Pickleball - Coaching"
+          ],
           "overallActivitiesCount": 4,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching",
+            "Pickleball - Coaching",
+            "Squash - Coaching"
+          ],
           "overallCheckedInCount": 13,
           "overallSportsCount": 4,
           "overallSportNames": [
@@ -1069,7 +1376,14 @@ window.CHAMPIONS_DATA = {
             "Badminton"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching"
+          ],
           "overallCheckedInCount": 12,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -1093,7 +1407,14 @@ window.CHAMPIONS_DATA = {
             "Badminton"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching"
+          ],
           "overallCheckedInCount": 12,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -1122,7 +1443,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 5,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1145,7 +1472,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 5,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1174,7 +1507,15 @@ window.CHAMPIONS_DATA = {
             "Table Tennis"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallCheckedInCount": 42,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -1200,7 +1541,17 @@ window.CHAMPIONS_DATA = {
             "Table Tennis"
           ],
           "activitiesAtCentreCount": 3,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallCheckedInCount": 30,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -1226,7 +1577,18 @@ window.CHAMPIONS_DATA = {
             "Table Tennis"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallActivitiesCount": 5,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Basketball - Coaching",
+            "Pickleball - Coaching",
+            "Squash - Coaching",
+            "Table Tennis - Coaching"
+          ],
           "overallCheckedInCount": 11,
           "overallSportsCount": 5,
           "overallSportNames": [
@@ -1257,7 +1619,14 @@ window.CHAMPIONS_DATA = {
             "Squash"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Squash - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Squash - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 25,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -1281,7 +1650,14 @@ window.CHAMPIONS_DATA = {
             "Squash"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Squash - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Squash - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 25,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -1310,7 +1686,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 21,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1334,7 +1716,15 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 2,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 18,
           "overallSportsCount": 2,
           "overallSportNames": [
@@ -1359,7 +1749,16 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 2,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Pickleball - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 4,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -1388,7 +1787,13 @@ window.CHAMPIONS_DATA = {
             "Badminton"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Badminton - Coaching"
+          ],
           "overallCheckedInCount": 12,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1411,7 +1816,13 @@ window.CHAMPIONS_DATA = {
             "Badminton"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Badminton - Coaching"
+          ],
           "overallCheckedInCount": 12,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1439,7 +1850,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 30,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1462,7 +1879,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 30,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1490,7 +1913,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 27,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1513,7 +1942,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 27,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1541,7 +1976,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 23,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1564,7 +2005,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 23,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1592,7 +2039,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 27,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1617,7 +2070,17 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 3,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Football - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Football - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 7,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -1644,7 +2107,17 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 3,
+          "activitiesAtCentreNames": [
+            "Badminton - Coaching",
+            "Football - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 3,
+          "overallActivityNames": [
+            "Badminton - Coaching",
+            "Football - Coaching",
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 7,
           "overallSportsCount": 3,
           "overallSportNames": [
@@ -1673,7 +2146,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 25,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1696,7 +2175,13 @@ window.CHAMPIONS_DATA = {
             "Swimming"
           ],
           "activitiesAtCentreCount": 1,
+          "activitiesAtCentreNames": [
+            "Swimming - Coaching"
+          ],
           "overallActivitiesCount": 1,
+          "overallActivityNames": [
+            "Swimming - Coaching"
+          ],
           "overallCheckedInCount": 25,
           "overallSportsCount": 1,
           "overallSportNames": [
@@ -1709,5 +2194,5 @@ window.CHAMPIONS_DATA = {
       "topActivities": []
     }
   ],
-  "generatedAt": "2026-03-03T09:21:00.891Z"
+  "generatedAt": "2026-03-03T09:25:56.495Z"
 };

@@ -345,6 +345,19 @@
         gap: 6px;
       }
 
+      .tagGroup {
+        margin-top: 12px;
+      }
+
+      .tagLabel {
+        margin: 0 0 8px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: var(--text-dim);
+      }
+
       .sportChip {
         padding: 5px 10px;
         border-radius: 6px;
@@ -466,8 +479,8 @@
           </div>
           <div style="margin-top: 12px;">
             <b>What counts as an activity?</b> Each unique combination of sport + activity type counts as one activity.
-            Examples: "Swimming Coaching" is one activity, "Swimming Games" is another. "Badminton Coaching" and "Squash Coaching"
-            are two separate activities. This applies to all types: coaching sessions, competitions, games, lap swimming, gym workouts, and more.
+            Examples: "Badminton - Games" and "Squash - Games" are different activities. "Badminton - Coaching" and
+            "Badminton - Games" are also different activities. This applies to the three activity buckets: games, coaching, and competition.
           </div>
           <div style="margin-top: 12px;">
             <b>Key metrics:</b> <i>Sports</i> = unique sports tried. <i>Activity Types</i> = distinct activity formats (coaching, games, etc.) across all sports. <i>Check-ins</i> = total verified sessions attended.
@@ -569,7 +582,7 @@
         {
           key: "topActivities",
           title: "Most Different Activities",
-          desc: "Largest activity mix overall, qualified by doing at least 2 activity combos at this centre.",
+          desc: "Largest activity mix overall, qualified by doing at least 2 sport + activity combinations at this centre.",
           badge: { text: "Variety", className: "violet" },
           primaryStat: (p) => `${p.overallActivitiesCount} total activity combos`,
           stats: (p) => [
@@ -674,7 +687,51 @@
           sportTags.appendChild(more);
         }
 
-        winnerInfo.append(nameEl, primaryStatEl, stats, sportTags);
+        const sportGroup = document.createElement("div");
+        sportGroup.className = "tagGroup";
+        const sportLabel = document.createElement("div");
+        sportLabel.className = "tagLabel";
+        sportLabel.textContent = "Sports";
+        sportGroup.append(sportLabel, sportTags);
+
+        winnerInfo.append(nameEl, primaryStatEl, stats, sportGroup);
+
+        const activities = Array.isArray(person.activitiesAtCentreNames)
+          ? person.activitiesAtCentreNames
+          : Array.isArray(person.overallActivityNames)
+            ? person.overallActivityNames
+            : Array.isArray(person.activityNames)
+              ? person.activityNames
+              : [];
+
+        if (activities.length) {
+          const activityGroup = document.createElement("div");
+          activityGroup.className = "tagGroup";
+
+          const activityLabel = document.createElement("div");
+          activityLabel.className = "tagLabel";
+          activityLabel.textContent = "Activities";
+
+          const activityTags = document.createElement("div");
+          activityTags.className = "sportTags";
+
+          activities.slice(0, 8).forEach((activity) => {
+            const chip = document.createElement("span");
+            chip.className = "sportChip";
+            chip.textContent = activity;
+            activityTags.appendChild(chip);
+          });
+
+          if (activities.length > 8) {
+            const more = document.createElement("span");
+            more.className = "sportChip";
+            more.textContent = `+${activities.length - 8} more`;
+            activityTags.appendChild(more);
+          }
+
+          activityGroup.append(activityLabel, activityTags);
+          winnerInfo.appendChild(activityGroup);
+        }
 
         const card = document.createElement("div");
         card.className = "winnerCard";
